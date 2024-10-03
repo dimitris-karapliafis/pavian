@@ -58,7 +58,7 @@ sampleModuleUI_function <- function(ns, samples, selected_sample = NULL) {
               selectizeInput(
                 ns('contaminant_selector'), label = NULL,
                 allcontaminants, selected = c("artificial sequences", "Chordata", "unclassified"),
-                multiple = TRUE, options = list(maxItems = 25, create = TRUE, placeholder = 'Filter clade'),
+                multiple = TRUE, options = list(maxItems = 100, create = TRUE, placeholder = 'Filter clade'),
                 width = "100%"
               )
           )
